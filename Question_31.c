@@ -23,7 +23,7 @@ int main()
         printf("%.2f is the remaining balance\n", total_amount - withdraw_amount);
         printf("Thank You for using our services");
        }
-       else
+       else if (choice == 'N' || choice == 'n')
        {
         printf("Thank You for using our services");
        }
