@@ -1,17 +1,24 @@
 #include <stdio.h>
+
 int main()
 {
-    int a,b;
-    printf("Enter the 1st number :",a);
-    scanf("%d",&a);
-    printf("Enter the 2nd number :",b);
-    scanf("%d",&b);
+    int a, b, temp;
 
-    a = a+b;
-    b = a-b;
-    a = a-b;
+    printf("Enter the 1st number: ");
+    scanf("%d", &a);
+
+    printf("Enter the 2nd number: ");
+    scanf("%d", &b);
+
+    printf("Before Swapping\n");
+    printf("a = %d\nb = %d\n", a, b);
+
+    temp = a;
+    a = b;
+    b = temp;
 
     printf("After Swapping\n");
-    printf("a = %d\nb = %d\n",a,b);
+    printf("a = %d\nb = %d\n", a, b);
+
     return 0;
 }
